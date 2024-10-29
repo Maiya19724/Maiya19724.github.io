@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Hao XIANG – Academic CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# Hao XIANG – Academic CV
+
 **Email**: [h.xiang@siat.ac.cn](mailto:h.xiang@siat.ac.cn)  
 **Current Affiliation**: Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences
 

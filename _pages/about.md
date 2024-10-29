@@ -37,7 +37,7 @@ Feel free to connect with me via [email](mailto:h.xiang@siat.ac.cn). I am always
 
 Thank you for visiting my website. I look forward to sharing more of my research journey with you! 🚀
 
-#### [![Free Palestine](https://readme-typing-svg.demolab.com?font=Roboto+mono&size=40&duration=2000&pause=1000&color=000000&vCenter=true&multiline=true&random=true&width=1200&height=100&lines=%F0%9F%87%B5%F0%9F%87%B8+In+Memory+of+Innocent+Lives+Lost+in+the+World)](https://git.io/typing-svg)
+#### 🇵🇸 🇺🇦 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Roboto+mono&size=30&duration=2000&pause=1000&color=000000&center=true&vCenter=true&multiline=true&random=true&width=1200&height=100&lines=In+Memory+of+Innocent+Lives+Lost+in+the+World)](https://git.io/typing-svg)
 > 🌊 **From River to the Sea**  🕊️
 ---
 

@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-# Xiang Hao – Academic CV
+# Hao XIANG – Academic CV
 **Email**: [h.xiang@siat.ac.cn](mailto:h.xiang@siat.ac.cn)  
 **Current Affiliation**: Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences
 
@@ -64,9 +64,14 @@ redirect_from:
 ---
 
 ## 📚 Publications
-- **Ketoreductase Domain-Catalyzed Polyketide Chain Release in Fungal Alkyl Salicylaldehyde Biosynthesis**  
-  *Journal of the American Chemical Society (JACS)*, 2023  
-  [Read online](https://pubs.acs.org/doi/10.1021/jacs.3c02011?ref=pdf)
+- [**Ketoreductase Domain-Catalyzed Polyketide Chain Release in Fungal Alkyl Salicylaldehyde Biosynthesis**](https://maiya19724.github.io/publication/2023-05-24-Ketoreductase%20Domain-Catalyzed%20Polyketide%20Chain%20Release%20in%20Fungal%20Alkyl%20Salicylaldehyde%20Biosynthesis-number-1)  
+  *Journal of the American Chemical Society (JACS)*, 2023
+- [**Mechanism Behind the Programmed Biosynthesis of Heterotrimeric Fungal Depside Thielavin A**](https://maiya19724.github.io/publication/2024-05-13-Mechanism%20Behind%20the%20Programmed%20Biosynthesis%20of%20Heterotrimeric%20Fungal%20Depside%20Thielavin%20A-number-2)  
+  *Angewandte Chemie International Edition (Angew)*, 2024
+- [**Structural and Computational Insights into the Noncanonical Aromatization in Fungal Polyketide Biosynthesis**](https://maiya19724.github.io/publication/2024-07-19-Structural%20and%20Computational%20Insights%20into%20the%20Noncanonical%20Aromatization%20in%20Fungal%20Polyketide%20Biosynthesis-number-3)  
+  *ACS Catalysis (ACS Catalysis)*, 2024
+- [**Exploring nature's battlefield: organismic interactions in the discovery of bioactive natural products**](https://maiya19724.github.io/publication/2024-09-24-Exploring%20natures%20battlefield%20organismic%20interactions%20in%20the%20discovery%20of%20bioactive%20natural%20products-number-4)  
+  *Natural Product Reports (NPR)*, 2024
 
 ---
 
@@ -74,7 +79,7 @@ redirect_from:
 - **Molecular Dynamics & Docking**: Experienced in computational simulations.
 - **Genome Mining & Bioinformatics**: Expertise in mining biosynthetic gene clusters.
 - **Machine Learning & AlphaFold2**: Applied machine learning in structural biology.
-- **Scientific Writing**: Published papers in top journals (JACS, Angewandte Chemie).
+- **Scientific Writing**: Published papers in top journals (JACS, Angewandte Chemie, ACS Catalysis, NPR).
 
 ---
 

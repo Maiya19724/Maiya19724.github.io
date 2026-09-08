@@ -490,26 +490,54 @@ sup {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  padding-block: 25px 22px;
+  background: var(--soft);
+  padding-block: 36px 22px;
 }
-.footer-contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 26px;
-  font-size: 12px;
+.contact-panel {
+  display: grid;
+  grid-template-columns: 206px minmax(0, 1fr);
+  gap: 64px;
 }
-.footer-contact > span {
-  font-weight: 600;
+.contact-heading h2 {
+  font: 500 32px/1.25 var(--serif);
+  letter-spacing: -0.025em;
 }
-.footer-contact > span span {
-  font-weight: 400;
+.contact-heading p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+.contact-heading span {
   color: var(--muted);
   margin-left: 4px;
 }
-.footer-contact a {
+.contact-email {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 550;
   color: var(--blue);
+  text-decoration: underline;
+  text-decoration-color: #b9cbd5;
+  text-underline-offset: 6px;
+  overflow-wrap: anywhere;
 }
-.footer-contact a:hover {
+.contact-email:hover {
+  text-decoration-color: currentColor;
+}
+.contact-affiliation {
+  margin-top: 14px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 26px;
+  margin-top: 15px;
+  color: var(--blue);
+  font-size: 13px;
+}
+.contact-links a:hover {
   text-decoration: underline;
 }
 .footer-bottom {
@@ -517,7 +545,9 @@ sup {
   justify-content: space-between;
   gap: 10px;
   font-size: 10px;
-  margin-top: 14px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+  margin-top: 28px;
   color: var(--muted);
 }
 .personal-note {
@@ -1025,6 +1055,9 @@ sup {
   }
   .mobile-nav a[aria-current] {
     color: var(--blue);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
   }
   .personal-home {
     display: block;
@@ -1280,9 +1313,12 @@ sup {
   .education-summary dd {
     font-size: 12px;
   }
-  .footer-contact {
-    gap: 8px 18px;
-    font-size: 11px;
+  .contact-panel {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .contact-email {
+    font-size: 22px;
   }
   .footer-bottom {
     flex-direction: column;

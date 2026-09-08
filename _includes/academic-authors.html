@@ -1,0 +1,1 @@
+{% for author in include.paper.authors %}{% if author == 'Hao Xiang' %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if include.paper.equal_contributors contains author %}<sup>†</sup>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}

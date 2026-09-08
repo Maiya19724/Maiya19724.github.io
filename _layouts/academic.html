@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% unless page.kind == 'home' %}{{ page.title | strip_html | escape }} · {% endunless %}Hao Xiang · Computational Biology &amp; Natural Products</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | escape }}">
+  <meta name="theme-color" content="#142f48">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="{% if page.collection == 'publications' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ page.title | escape }} · Hao Xiang">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/profile.png' | absolute_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/hx-mark.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  <script src="{{ '/assets/js/academic.js' | relative_url }}" defer></script>
+  {% if page.kind == 'home' %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Hao Xiang","alternateName":"向浩","url":{{ '/' | absolute_url | jsonify }},"image":{{ '/images/profile.png' | absolute_url | jsonify }},"jobTitle":"PhD student","affiliation":{"@type":"Organization","name":"University of Chinese Academy of Sciences"},"sameAs":["https://orcid.org/0000-0002-0299-1069","https://github.com/Maiya19724"]}
+  </script>
+  {% endif %}
+</head>
+<body class="academic-site {{ page.kind }}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Hao Xiang, home"><span class="brand-mark" aria-hidden="true">hx.</span><span>HAO XIANG</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">{% include academic-nav.html %}</nav>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation"><span>Menu</span><span class="menu-icon" aria-hidden="true">☰</span></summary>
+        <nav aria-label="Mobile navigation">{% include academic-nav.html %}</nav>
+      </details>
+    </div>
+  </header>
+  <main id="main-content" tabindex="-1">{{ content }}</main>
+  <footer id="contact" class="site-footer">
+    <div class="shell">
+      <div class="footer-top">
+        <div><p class="eyebrow">Get in touch</p><h2>Let’s talk science.</h2><p>Genome mining, biosynthesis and computational biology.</p></div>
+        <div class="contact-links"><a class="contact-email" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }} <span aria-hidden="true">↗</span></a><div><a href="{{ site.data.profile.orcid }}">ORCID <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.lab_url }}">SyM Lab <span aria-hidden="true">↗</span></a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© {{ site.time | date: '%Y' }} Hao Xiang <span class="footer-dot">·</span> Shenzhen, China</span><span>Updated {{ site.data.profile.updated | date: '%B %Y' }} <span class="footer-dot">·</span> Built with <a href="https://jekyllrb.com/">Jekyll</a></span></div>
+      {% if page.kind == 'home' %}
+      <details class="personal-note"><summary>Personal note</summary><p>🇵🇸 🇺🇦 In Memory of Innocent Lives Lost in the World</p><p>🌊 From River to the Sea 🕊️</p></details>
+      {% endif %}
+    </div>
+  </footer>
+</body>
+</html>

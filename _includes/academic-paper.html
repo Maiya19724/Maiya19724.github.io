@@ -1,0 +1,10 @@
+<article class="paper-row" data-paper data-type="{{ include.paper.paper_type | slugify }}" data-year="{{ include.paper.date | date: '%Y' }}">
+  <div class="paper-aside"><span class="paper-year">{{ include.paper.date | date: '%Y' }}</span><span class="paper-type">{{ include.paper.paper_type }}</span>{% if include.paper.equal_contributors contains 'Hao Xiang' %}<span class="contribution">Co-first author</span>{% endif %}</div>
+  <div class="paper-main">
+    <p class="paper-venue">{{ include.paper.venue }}</p>
+    {% if include.level == 2 %}<h2><a href="{{ include.paper.url | relative_url }}">{{ include.paper.title }}</a></h2>{% else %}<h3><a href="{{ include.paper.url | relative_url }}">{{ include.paper.title }}</a></h3>{% endif %}
+    <p class="paper-authors">{% include academic-authors.html paper=include.paper %}</p>
+    <p class="paper-citation">{{ include.paper.citation }}</p>
+    <div class="paper-links"><a href="https://doi.org/{{ include.paper.doi }}" aria-label="Publisher page for {{ include.paper.title | escape }}">DOI <span aria-hidden="true">↗</span></a>{% if include.paper.pdf_path %}<a href="{{ include.paper.pdf_path | relative_url }}" aria-label="PDF of {{ include.paper.title | escape }}">PDF <span aria-hidden="true">↗</span></a>{% endif %}{% if include.paper.open_url %}<a href="{{ include.paper.open_url }}" aria-label="Full text of {{ include.paper.title | escape }}">Full text <span aria-hidden="true">↗</span></a>{% endif %}{% if include.paper.code_url %}<a href="{{ include.paper.code_url }}">Code <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  </div>
+</article>

@@ -1,0 +1,6 @@
+<a href="{{ '/' | relative_url }}"{% if page.kind == 'home' %} aria-current="page"{% endif %}>About</a>
+<a href="{{ '/#research' | relative_url }}">Research</a>
+<a href="{{ '/publications/' | relative_url }}"{% if page.kind == 'publications' or page.collection == 'publications' %} aria-current="page"{% endif %}>Publications</a>
+<a href="{{ '/#software' | relative_url }}">Code</a>
+<a href="{{ '/cv/' | relative_url }}"{% if page.kind == 'cv' %} aria-current="page"{% endif %}>CV</a>
+<a class="nav-contact" href="{{ '/#contact' | relative_url }}">Contact <span aria-hidden="true">↗</span></a>

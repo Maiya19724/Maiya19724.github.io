@@ -1,87 +1,18 @@
 ---
-layout: archive
-title: "Hao XIANG – Academic CV"
+layout: academic
+kind: cv
+title: "Academic CV"
 permalink: /cv/
-author_profile: true
+description: "Academic CV of Hao Xiang: education, research experience, publications and awards."
 redirect_from:
   - /resume
 ---
-
-{% include base_path %}
-
-
-**Email**: [h.xiang@siat.ac.cn](mailto:h.xiang@siat.ac.cn)  
-**Current Affiliation**: Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences
-
----
-
-## 🎓 Education
-- **Master of Science in Chemical Biology**  
-  Yunnan Minzu University, 09/2021 – 06/2024
-  - **GPA**: 80/100
-  - Research focus: Big data mining of functional small molecules from endophytic fungi in ethnic medicine.
-
-- **Bachelor of Science in Bioinformatics**  
-  Chongqing University of Posts and Telecommunications, 09/2016 – 06/2020
-  - **GPA**: 80/100
-
-- **Visiting Student (Joint Master’s Degree)**  
-  Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, 03/2023 – Present
-  - Research Focus: Construction of data mining methods for microbial small molecules.
-
----
-
-## 🔬 Research Experience
-### 1. Unveiling the Mechanism of Heterotrimeric Fungal Depside Thielavin A Biosynthesis
-**City University of Hong Kong**, 08/2023 – 01/2024
-- Conducted molecular dynamics simulations and molecular docking tasks.
-- Completed a manuscript submitted to *Angewandte Chemie International Edition*.
-
-### 2. Big Data Mining for Functional Small Molecules from Endophytic Fungi in Ethnic Medicine
-**Yunnan Minzu University**, 09/2022 – 06/2023
-- Developed a method to identify potential resistance genes within biosynthetic gene clusters.
-- Published findings as co-first author in *Journal of the American Chemical Society (JACS)*.
-- Conducted extended analysis on cupin-domain protein, submitted to *Angewandte Chemie International Edition*.
-
-### 3. Development of Multi-Level Flavour Loading Technology for Reconstructed Tobacco Leaves
-**Yunnan Minzu University**, 01/2022 – 06/2023
-- Analyzed aroma components of Yunnan sun-cured tobacco.
-- Provided technical support for the utilization of Yunnan’s tobacco resources.
-
-### 4. Alphafold2 Functional Iteration Deployment
-**Yunnan Minzu University**, 10/2022
-- Deployed AlphaFold2 source code and completed local database setup.
-- Identified the ACP structural domain of StrA protein for molecular docking analysis.
-
----
-
-## 🏆 Awards and Honours
-- **National Scholarship for Graduate Excellence** (National-level), 10/2023
-- **First-Class Academic Scholarship** (University-level), 09/2022
-- **Third-Class Academic Scholarship** (University-level), 09/2021
-- **Second-Class Academic Scholarship** (Undergraduate, University-level), 09/2018
-
----
-
-## 📚 Publications
-- [**Ketoreductase Domain-Catalyzed Polyketide Chain Release in Fungal Alkyl Salicylaldehyde Biosynthesis**](https://maiya19724.github.io/publication/2023-05-24-Ketoreductase%20Domain-Catalyzed%20Polyketide%20Chain%20Release%20in%20Fungal%20Alkyl%20Salicylaldehyde%20Biosynthesis-number-1)  
-  *Journal of the American Chemical Society (JACS)*, 2023
-- [**Mechanism Behind the Programmed Biosynthesis of Heterotrimeric Fungal Depside Thielavin A**](https://maiya19724.github.io/publication/2024-05-13-Mechanism%20Behind%20the%20Programmed%20Biosynthesis%20of%20Heterotrimeric%20Fungal%20Depside%20Thielavin%20A-number-2)  
-  *Angewandte Chemie International Edition (Angew)*, 2024
-- [**Structural and Computational Insights into the Noncanonical Aromatization in Fungal Polyketide Biosynthesis**](https://maiya19724.github.io/publication/2024-07-19-Structural%20and%20Computational%20Insights%20into%20the%20Noncanonical%20Aromatization%20in%20Fungal%20Polyketide%20Biosynthesis-number-3)  
-  *ACS Catalysis (ACS Catalysis)*, 2024
-- [**Exploring nature's battlefield: organismic interactions in the discovery of bioactive natural products**](https://maiya19724.github.io/publication/2024-09-24-Exploring%20natures%20battlefield%20organismic%20interactions%20in%20the%20discovery%20of%20bioactive%20natural%20products-number-4)  
-  *Natural Product Reports (NPR)*, 2024
-
----
-
-## 🛠 Skills
-- **Molecular Dynamics & Docking**: Experienced in computational simulations.
-- **Genome Mining & Bioinformatics**: Expertise in mining biosynthetic gene clusters.
-- **Machine Learning & AlphaFold2**: Applied machine learning in structural biology.
-- **Scientific Writing**: Published papers in top journals (JACS, Angewandte Chemie, ACS Catalysis, NPR).
-
----
-
-## 📬 Contact
-Feel free to reach out to me via [email](mailto:h.xiang@siat.ac.cn) for collaborations or inquiries related to computational biology and natural product discovery.  
+<div class="shell cv-page">
+  <header class="cv-heading"><div><p class="eyebrow">Curriculum vitae</p><h1>Hao Xiang <span lang="zh">向浩</span></h1><p class="cv-subtitle">Computational biology · Genome mining · Natural products</p></div><button type="button" class="button button-secondary" data-print-cv hidden>Print / Save PDF <span aria-hidden="true">↓</span></button></header>
+  <div class="cv-intro"><p>PhD student at the <strong>University of Chinese Academy of Sciences</strong>, working at <a href="https://sym-lab.net/">SyM Lab</a>, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.</p><p><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a> · <a href="{{ site.data.profile.orcid }}">ORCID</a> · <a href="{{ site.data.profile.github }}">GitHub</a></p></div>
+  <section class="cv-section"><h2>Education</h2><div class="timeline">{% for item in site.data.profile.education %}<article class="timeline-item"><p class="timeline-period">{{ item.period }}</p><div><h3>{{ item.degree }}</h3><p>{{ item.institution }}</p><p class="timeline-detail">{{ item.detail }}</p></div></article>{% endfor %}</div></section>
+  <section class="cv-section"><h2>Research<br>experience</h2><div class="timeline">{% for item in site.data.profile.visiting %}<article class="timeline-item"><p class="timeline-period">{{ item.period }}</p><div><h3>{{ item.institution }}</h3><p>{{ item.role }}</p><p class="timeline-detail">{{ item.detail }}</p></div></article>{% endfor %}<article class="timeline-item"><p class="timeline-period">2022 – 2023</p><div><h3>Yunnan Minzu University</h3><p>Natural-product genome mining</p><p class="timeline-detail">Mining biosynthetic gene clusters from endophytic fungi and analyzing candidate resistance genes. Related work on polyketide biosynthesis was published in JACS (2023) and ACS Catalysis (2024).</p></div></article><article class="timeline-item"><p class="timeline-period">2022 – 2023</p><div><h3>Yunnan Minzu University</h3><p>Additional research</p><p class="timeline-detail">Aroma-component analysis for reconstituted tobacco leaves; local AlphaFold2 deployment and protein-domain analysis for molecular docking.</p></div></article></div></section>
+  <section class="cv-section"><h2>Research methods</h2><div class="cv-items"><article><h3>Genome mining &amp; sequence analysis</h3><p>Biosynthetic gene-cluster detection, comparative genomics, protein annotation, antiSMASH and cblaster workflows.</p></article><article><h3>Structural &amp; computational biology</h3><p>Molecular docking, molecular dynamics, protein-structure prediction and biosynthetic enzyme analysis.</p></article><article><h3>Machine learning</h3><p>Sequence-based learning and exploration of protein language models for biological function prediction.</p></article></div></section>
+  <section class="cv-section"><h2>Publications</h2><div><ol class="cv-papers">{% assign papers = site.publications | sort: 'date' | reverse %}{% for paper in papers %}<li>{% include academic-authors.html paper=paper %}. <a href="https://doi.org/{{ paper.doi }}">{{ paper.title }}</a>.<span>{{ paper.citation }}</span></li>{% endfor %}</ol><p class="contribution-note">† Equal contribution. <a class="text-link" href="{{ '/publications/' | relative_url }}">Publication links &amp; files →</a></p></div></section>
+  <section class="cv-section"><h2>Awards</h2><ul class="cv-list">{% for award in site.data.profile.awards %}<li><time>{{ award.year }}</time><span>{{ award.title }}</span></li>{% endfor %}</ul></section>
+</div>

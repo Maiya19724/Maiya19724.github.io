@@ -1,0 +1,52 @@
+name: Hao Xiang
+name_zh: 向浩
+role: PhD student
+university: University of Chinese Academy of Sciences
+lab: SyM Lab
+lab_url: https://sym-lab.net/
+institution: Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences
+location: Shenzhen, China
+email: h.xiang@siat.ac.cn
+orcid: https://orcid.org/0000-0002-0299-1069
+github: https://github.com/Maiya19724
+updated: "2026-09-08"
+research:
+  - title: Genome mining
+    description: Finding biosynthetic gene clusters in microbial genomes and connecting their architecture to natural-product chemistry.
+    keywords: Comparative genomics · BGC analysis
+  - title: Protein language models
+    description: Exploring sequence-based representations to support protein-function analysis and the prioritization of biosynthetic candidates.
+    keywords: Protein sequences · Machine learning
+  - title: Biosynthetic mechanisms
+    description: Combining sequence analysis, molecular docking and simulation to study how enzymes assemble and modify natural products.
+    keywords: Enzyme function · Molecular simulation
+education:
+  - period: Current
+    degree: PhD student
+    institution: University of Chinese Academy of Sciences
+    detail: Research at SyM Lab, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences.
+  - period: 2021 – 2024
+    degree: MSc in Chemical Biology
+    institution: Yunnan Minzu University
+    detail: Genome mining of functional small molecules from endophytic fungi associated with ethnic medicinal plants.
+  - period: 2016 – 2020
+    degree: BSc in Bioinformatics
+    institution: Chongqing University of Posts and Telecommunications
+visiting:
+  - period: 2023 – 2024
+    institution: Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences
+    role: Visiting student
+    detail: Computational methods for mining microbial small molecules.
+  - period: Aug 2023 – Jan 2024
+    institution: City University of Hong Kong
+    role: Research experience
+    detail: Molecular docking and dynamics for thielavin A biosynthesis; published in Angewandte Chemie International Edition in 2024.
+awards:
+  - year: "2023"
+    title: National Scholarship for Graduate Excellence
+  - year: "2022"
+    title: First-Class Academic Scholarship
+  - year: "2021"
+    title: Third-Class Academic Scholarship
+  - year: "2018"
+    title: Second-Class Undergraduate Academic Scholarship

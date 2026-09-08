@@ -15,7 +15,7 @@ redirect_from:
       <div class="profile-name"><h1>Hao Xiang <span lang="zh">向浩</span></h1><p class="profile-role">PhD student</p><p class="profile-location">Shenzhen, China</p></div>
     </div>
     <p class="profile-affiliation">University of Chinese<br class="profile-break"> Academy of Sciences<br><a href="{{ site.data.profile.lab_url }}">SyM Lab</a> · SIAT, CAS</p>
-    <div class="profile-contact"><a class="profile-email" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a><div class="profile-links"><a href="{{ site.data.profile.orcid }}">ORCID <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a><a href="{{ '/cv/' | relative_url }}">CV <span aria-hidden="true">↗</span></a></div></div>
+    <div class="profile-contact"><span class="profile-email">{{ site.data.profile.email_display }}</span><div class="profile-links"><a href="{{ site.data.profile.orcid }}">ORCID <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a><a href="{{ '/cv/' | relative_url }}">CV <span aria-hidden="true">↗</span></a></div></div>
   </aside>
 
   <div class="home-content">

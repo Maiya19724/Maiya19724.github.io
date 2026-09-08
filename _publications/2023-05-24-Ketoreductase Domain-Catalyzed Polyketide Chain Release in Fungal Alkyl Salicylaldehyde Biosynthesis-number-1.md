@@ -10,6 +10,9 @@ doi: "10.1021/jacs.3c02011"
 paper_type: "Research article"
 equal_contributors: ["Run Yang", "Jian Feng", "Hao Xiang", "Bin Cheng"]
 selected: true
+highlight_title: "An unexpected route to polyketide chain release"
+highlight_venue: "JACS"
+highlight_summary: "Our work uncovered a ketoreductase domain that releases a fungal polyketide chain, revealing an unusual route to the salicylaldehyde scaffold."
 image: "/images/ja3c02011_0006.gif"
 pdf_path: "/files/2023JACS.pdf"
 authors: ["Run Yang", "Jian Feng", "Hao Xiang", "Bin Cheng", "Li-Dong Shao", "Yan-Ping Li", "Hang Wang", "Qiu-Fen Hu", "Wei-Lie Xiao", "Yudai Matsuda", "Wei-Guang Wang"]

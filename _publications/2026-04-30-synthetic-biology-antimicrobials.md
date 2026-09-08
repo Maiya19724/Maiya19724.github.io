@@ -7,7 +7,7 @@ date: "2026-04-30"
 venue: "Current Opinion in Microbiology"
 doi: "10.1016/j.mib.2026.102759"
 paper_type: "Review"
-selected: true
+selected: false
 citation: "Curr. Opin. Microbiol. 2026, 91, 102759."
 authors: ["Siqiang Chen", "Hao Xiang", "Ying Chen", "Helge B. Bode", "Yi-Ming Shi"]
 layout: "publication"

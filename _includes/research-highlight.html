@@ -1,0 +1,13 @@
+<article class="research-highlight" data-paper>
+  <figure class="research-visual">
+    <a class="research-thumbnail" href="{{ include.paper.url | relative_url }}" aria-label="Read about {{ include.paper.title | escape }}"><img src="{{ include.paper.image | relative_url }}" alt="{{ include.paper.image_alt | default: include.paper.title | escape }}" loading="lazy"></a>
+    {% if include.paper.image_license %}<figcaption><a href="{{ include.paper.image_source }}">Chen et al., {{ include.paper.date | date: '%Y' }}</a> · <a href="{{ include.paper.image_license_url }}">{{ include.paper.image_license }}</a></figcaption>{% endif %}
+  </figure>
+  <div class="highlight-copy">
+    <p class="highlight-meta">{% if include.paper.equal_contributors contains site.data.profile.name %}<span class="highlight-role">Co-first author</span>{% endif %}<span>{{ include.paper.highlight_venue }} · {{ include.paper.date | date: '%Y' }}</span></p>
+    <h3><a href="{{ include.paper.url | relative_url }}">{{ include.paper.highlight_title }}</a></h3>
+    <p class="highlight-summary">{{ include.paper.highlight_summary }}</p>
+    {% if include.paper.personal_contribution %}<p class="highlight-contribution"><strong>My contribution:</strong> {{ include.paper.personal_contribution }}</p>{% endif %}
+    <div class="highlight-links"><a href="{{ include.paper.url | relative_url }}">Paper details <span aria-hidden="true">→</span></a>{% if include.paper.code_url %}<a href="{{ include.paper.code_url }}">Code <span aria-hidden="true">↗</span></a>{% endif %}{% if include.paper.pdf_path %}<a href="{{ include.paper.pdf_path | relative_url }}">PDF <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  </div>
+</article>

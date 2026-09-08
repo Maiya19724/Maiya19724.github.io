@@ -25,7 +25,7 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="shell header-inner">
-      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Hao Xiang, home"><span class="brand-mark" aria-hidden="true">hx.</span><span>HAO XIANG</span></a>
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="Hao Xiang, home">Hao Xiang <span lang="zh">向浩</span></a>
       <nav class="desktop-nav" aria-label="Main navigation">{% include academic-nav.html %}</nav>
       <details class="mobile-nav">
         <summary aria-label="Open navigation"><span>Menu</span><span class="menu-icon" aria-hidden="true">☰</span></summary>
@@ -36,11 +36,8 @@
   <main id="main-content" tabindex="-1">{{ content }}</main>
   <footer id="contact" class="site-footer">
     <div class="shell">
-      <div class="footer-top">
-        <div><p class="eyebrow">Get in touch</p><h2>Let’s talk science.</h2><p>Genome mining, biosynthesis and computational biology.</p></div>
-        <div class="contact-links"><a class="contact-email" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }} <span aria-hidden="true">↗</span></a><div><a href="{{ site.data.profile.orcid }}">ORCID <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.lab_url }}">SyM Lab <span aria-hidden="true">↗</span></a></div></div>
-      </div>
-      <div class="footer-bottom"><span>© {{ site.time | date: '%Y' }} Hao Xiang <span class="footer-dot">·</span> Shenzhen, China</span><span>Updated {{ site.data.profile.updated | date: '%B %Y' }} <span class="footer-dot">·</span> Built with <a href="https://jekyllrb.com/">Jekyll</a></span></div>
+      <div class="footer-contact"><span>Hao Xiang <span lang="zh">/ 向浩</span></span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a><a href="{{ site.data.profile.lab_url }}">SyM Lab <span aria-hidden="true">↗</span></a></div>
+      <div class="footer-bottom"><span>© {{ site.time | date: '%Y' }} Hao Xiang · Shenzhen, China</span><span>Updated {{ site.data.profile.updated | date: '%B %Y' }}</span></div>
       {% if page.kind == 'home' %}
       <details class="personal-note"><summary>Personal note</summary><p>🇵🇸 🇺🇦 In Memory of Innocent Lives Lost in the World</p><p>🌊 From River to the Sea 🕊️</p></details>
       {% endif %}

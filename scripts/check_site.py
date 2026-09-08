@@ -61,7 +61,7 @@ for path, page in pages.items():
         elif u.fragment and target in pages and unquote(u.fragment) not in pages[target].ids:
             errors.append(f'{path.relative_to(root)}: missing anchor {link}')
 
-expected = {'index.html': 3, 'publications/index.html': 7, 'cv/index.html': 0}
+expected = {'index.html': 2, 'publications/index.html': 7, 'cv/index.html': 0}
 for p, count in expected.items():
     page = pages.get(root / p)
     if page is None:

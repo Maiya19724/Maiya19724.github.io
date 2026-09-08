@@ -35,9 +35,15 @@ Sorting uses the original dates for existing records. New dioxanopeptin and synt
 
 The dioxanopeptin paper points to [SIAT-SyM-Group/2025-dxpBGC-mining](https://github.com/SIAT-SyM-Group/2025-dxpBGC-mining). The user's public fork and repository README corroborate the antiSMASH/cblaster notebook workflow and Colab URL. The site links to the paper's canonical group repository and calls it accompanying research code. It does not claim sole ownership of group software or list unrelated forks as original projects.
 
+## Research images
+
+The dioxanopeptin graphical abstract is reproduced unmodified from Chen et al., [Chemical Science (2026)](https://pubs.rsc.org/en/content/articlehtml/2026/sc/d6sc00003g), licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). The JPEG was retrieved from the [Europe PMC supplementary-files package](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12964715/supplementaryFiles) as `d6sc00003g-ga.jpg`. Source and license links appear beside the homepage image and in its publication detail page. The original JACS graphical abstract remains unchanged.
+
 ## Editorial decisions
 
 - English remains the main language; the established Chinese name is shown alongside it.
+- The homepage puts the personal profile alongside a short first-person introduction and two co-first-authored research highlights. Headlines summarize each project; the full paper titles, complete authors and citations remain on the publication pages.
+- The dioxanopeptin highlight states the specific published contribution (biosynthetic gene-cluster analysis). No unverified individual role is claimed for JACS. Reviews, shared code and education follow at a smaller visual scale.
 - The existing personal note is preserved in a native, collapsible footer disclosure. Its animated third-party image was replaced with the same text.
 - The empty blog was removed from the primary navigation; its old URL still gives access to research materials.
 - Unused AcademicPages demo pages are excluded from the generated site, while their source files remain in the repository.

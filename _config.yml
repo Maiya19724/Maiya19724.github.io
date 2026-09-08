@@ -28,7 +28,7 @@ author:
   location         : "Shenzhen, China"
   employer         : "SIAT"
   uri              : https://sym-lab.net/
-  email            : "h.xiang@siat.ac.cn"
+  email_display    : "h.xiang④siat.ac.cn"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

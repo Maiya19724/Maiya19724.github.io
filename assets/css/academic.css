@@ -267,6 +267,7 @@ sup {
 }
 .profile-email {
   font-size: 13px;
+  color: var(--blue);
 }
 .profile-links {
   display: flex;
@@ -516,13 +517,7 @@ sup {
   line-height: 1.4;
   font-weight: 550;
   color: var(--blue);
-  text-decoration: underline;
-  text-decoration-color: #b9cbd5;
-  text-underline-offset: 6px;
   overflow-wrap: anywhere;
-}
-.contact-email:hover {
-  text-decoration-color: currentColor;
 }
 .contact-affiliation {
   margin-top: 14px;

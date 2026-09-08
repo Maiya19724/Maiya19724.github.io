@@ -36,7 +36,14 @@
   <main id="main-content" tabindex="-1">{{ content }}</main>
   <footer id="contact" class="site-footer">
     <div class="shell">
-      <div class="footer-contact"><span>Hao Xiang <span lang="zh">/ 向浩</span></span><a href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }}</a><a href="{{ site.data.profile.lab_url }}">SyM Lab <span aria-hidden="true">↗</span></a></div>
+      <section class="contact-panel" aria-labelledby="contact-title">
+        <div class="contact-heading"><h2 id="contact-title">Contact</h2><p>Hao Xiang <span lang="zh">/ 向浩</span></p></div>
+        <div class="contact-details">
+          <a class="contact-email" href="mailto:{{ site.data.profile.email }}" aria-label="Email Hao Xiang at {{ site.data.profile.email }}">{{ site.data.profile.email }}</a>
+          <p class="contact-affiliation">{{ site.data.profile.lab }} · {{ site.data.profile.institution }}<br>{{ site.data.profile.location }}</p>
+          <div class="contact-links"><a href="{{ site.data.profile.lab_url }}">SyM Lab <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.orcid }}">ORCID <span aria-hidden="true">↗</span></a><a href="{{ site.data.profile.github }}">GitHub <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
       <div class="footer-bottom"><span>© {{ site.time | date: '%Y' }} Hao Xiang · Shenzhen, China</span><span>Updated {{ site.data.profile.updated | date: '%B %Y' }}</span></div>
       {% if page.kind == 'home' %}
       <details class="personal-note"><summary>Personal note</summary><p>🇵🇸 🇺🇦 In Memory of Innocent Lives Lost in the World</p><p>🌊 From River to the Sea 🕊️</p></details>

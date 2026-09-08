@@ -1,37 +1,6 @@
 ---
-layout: archive
+layout: academic
 title: "Sitemap"
 permalink: /sitemap/
-author_profile: true
 ---
-
-{% include base_path %}
-
-A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
-
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+<div class="shell article-page"><header class="page-heading"><p class="eyebrow">Explore</p><h1>Sitemap</h1></header><p><a class="text-link" href="{{ '/' | relative_url }}">About &amp; research →</a></p><p><a class="text-link" href="{{ '/publications/' | relative_url }}">Publications →</a></p><p><a class="text-link" href="{{ '/cv/' | relative_url }}">Academic CV →</a></p><div class="paper-list">{% assign papers = site.publications | sort: 'date' | reverse %}{% for paper in papers %}{% include academic-paper.html paper=paper level=2 %}{% endfor %}</div></div>

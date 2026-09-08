@@ -1,36 +1,19 @@
 ---
-layout: archive
+layout: academic
+kind: publications
 title: "Publications"
 permalink: /publications/
-author_profile: true
+description: "Publications by Hao Xiang on genome mining, natural-product biosynthesis and antimicrobial discovery, with DOI links and research code."
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<div class="shell publications-page">
+  <header class="page-heading"><p class="eyebrow">Research output <span aria-hidden="true">/</span> 2023–2026</p><h1>Publications</h1><p>Genome mining, biosynthetic mechanisms and natural-product discovery.</p><a class="text-link" href="{{ site.data.profile.orcid }}">ORCID profile <span aria-hidden="true">↗</span></a></header>
+  <div class="publication-tools" data-publication-tools hidden>
+    <div class="filter-buttons" role="group" aria-label="Filter publications by type"><button type="button" data-filter="all" aria-pressed="true">All papers</button><button type="button" data-filter="research-article" aria-pressed="false">Research articles</button><button type="button" data-filter="review" aria-pressed="false">Reviews</button></div>
+    <label class="publication-search"><span class="visually-hidden">Search publications by title, author, journal or year</span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input type="search" placeholder="Search title, journal, year…" data-publication-search></label>
+  </div>
+  <div class="publication-status"><p data-publication-status aria-live="polite">{{ site.publications.size }} publications</p><p>† Equal contribution</p></div>
+  {% assign papers = site.publications | sort: 'date' | reverse %}
+  <div class="paper-list" data-publication-list>{% for paper in papers %}{% include academic-paper.html paper=paper level=2 %}{% endfor %}</div>
+  <div class="empty-state" data-publication-empty hidden><h2>No matching papers.</h2><p>Try another title, author, journal or year.</p><button type="button" class="button button-secondary" data-publication-reset>Clear filters</button></div>
+</div>

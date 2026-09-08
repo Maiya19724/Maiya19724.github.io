@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Hao XIANG / Home Page"
+title                    : "Hao Xiang"
 title_separator          : "-"
 name                     : &name "Hao XIANG"
-description              : &description "Ph.D student in University of Chinese Academy of Sciences."
+description              : &description "Hao Xiang, PhD student at UCAS and SyM Lab, SIAT. Genome mining, biosynthesis and computational approaches to natural-product discovery."
 url                      : https://Maiya19724.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Maiya19724/Maiya19724.github.io"
@@ -24,8 +24,8 @@ author:
   avatar           : "profile.png"
   name             : "Hao XIANG"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D student in University of Chinese Academy of Sciences."
-  location         : "Shenzhen China"
+  bio              : "PhD student at UCAS · SyM Lab, SIAT"
+  location         : "Shenzhen, China"
   employer         : "SIAT"
   uri              : https://sym-lab.net/
   email            : "h.xiang@siat.ac.cn"
@@ -157,6 +157,20 @@ include:
   - _pages
   - files
 exclude:
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - docs
+  - scripts
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -299,6 +313,7 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
@@ -307,6 +322,7 @@ plugins:
 # Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
+  - jekyll-redirect-from
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
